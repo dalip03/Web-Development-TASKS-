@@ -1,0 +1,109 @@
+body{
+    margin-left: auto;
+    margin-top: auto;
+    background-color: antiquewhite;
+}
+
+.head{
+    margin-top: 20px;
+   text-align: center;
+}
+
+.spiral{ 
+margin-left: 600px;
+margin-top: 150px;
+}
+
+.D1{
+    height: 40px;
+    width: 40px;
+    border : solid black;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-right: none;
+    border-bottom: none;
+  
+}
+
+.D2{
+    height: 60px;
+    width: 60px;
+    /* border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    border : solid black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: none;
+    border-top: none;
+    margin-top: -58px;
+    margin-left:-1px;
+}
+
+.D3{
+    height: 80px;
+    width: 80px;
+    border : solid black;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-right: none;
+    border-bottom: none;
+    margin-top: -66px;
+    margin-left: -20px;
+}
+
+.D4{
+    height: 100px;
+    width: 100px;
+    /* border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    border : solid black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: none;
+    border-top: none;
+    margin-top: -98px;
+    margin-left:-20px;
+}
+
+.D5{
+
+    height: 120px;
+    width: 120px;
+    /* border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    border : solid black;
+    border-bottom-left-radius: 65px;
+    border-top-right-radius: 55px;
+    border-top-left-radius: 60px;
+    border-right: none;
+    border-bottom: none;
+    margin-top: -105px;
+    margin-left:-42px;
+   
+}
+
+.D6{
+
+    height: 140px;
+    width: 140px;
+    /* border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    border : solid black;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+
+    margin-top: -141px;
+    margin-left:-40px;
+   
+}
