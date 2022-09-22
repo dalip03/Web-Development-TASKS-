@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Home</title>
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+        margin: 0%;
+    }
+    .back{
+        height: 100vh;
+        width: 100%;
+        background-image: url(wall.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .clock{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        background-color: rgb(231, 139, 20);
+        border-radius: 50%;
+        float: right;
+        margin-right: 50px;
+    }
+    .clock2{
+        height: 140px;
+        width: 140px;
+        border: 3px solid rgb(249, 184, 106);
+        box-shadow: 2px 2px 5px greenyellow;
+        background-color: white;
+        border-radius: 50%;
+        float: right;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+    .mnt{
+    width: 1px;
+    height: 68px;
+    background-color: black;
+    margin-top: 3px;
+    margin-left: 70px;
+    animation: ani 60s linear infinite;
+    transform-origin: 0%  100%;
+    }
+
+    @keyframes ani {
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    .hr{
+        position: absolute;
+    width: 1px;
+    height: 60px;
+    background-color: black;
+    margin-top: 11px;
+    margin-left: 69px;
+    animation: ani1 3600s linear infinite;
+    transform-origin: 0%  100%;
+    }
+    .hr2{
+     position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: black;
+    margin-top: 21px;
+    margin-left: 69px;
+    animation: ani1 36000s linear infinite;
+    transform-origin: 0%  100%;
+    }
+    .window{
+        height: 200px;
+        width: 100px;
+        border: 8px solid rgb(208, 244, 244);
+        position: absolute;
+        background-image: url(pexels-jaime-reimer-2662116.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .wndo{
+        height:200px;
+        width: 2px;
+        background-color: rgb(221, 244, 236);
+        margin-left: 50px;
+      
+    }
+    .wndow{
+        height:2px;
+        width: 200px;
+        position: absolute;
+        background-color: rgb(221, 244, 236);
+        margin-top: 100px;
+      
+    }
+
+    @keyframes ani1 {
+
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+</style>
+<body>
+    <div class="back">
+        <!-- flower -->
+
+        
+        <div class="window">
+            <div class="wndow"></div>
+            <div class="wndo">
+
+            </div> </div>
+
+
+        <!-- <div class="clock"> -->
+
+
+          
+            <div class="clock2">
+                <div class="hr2"></div>
+                <div class="hr">
+
+                </div>
+
+                <div class="mnt">
+
+                </div>
+
+            </div>
+
+
+        <!-- </div> -->
+
+    </div>
+    
+</body>
+</html>
