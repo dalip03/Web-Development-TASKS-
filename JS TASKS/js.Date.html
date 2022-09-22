@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DATE</title>
+</head>
+<body>
+
+
+
+
+<p id="dt"></p>
+<p id="dt2"></p>
+<p id="dt3"></p>
+<p id="dt4"></p>
+<p id="dt5"></p>
+<p id="dt6"></p>
+<p id="dt7"></p>
+
+
+
+
+
+    <script>
+    var d = new Date(); 
+    document.getElementById("dt").innerHTML=d;
+
+
+    var year = d.getFullYear();
+    document.getElementById("dt2").innerHTML=year;
+
+    var hours =d.getHours();
+    document.getElementById("dt3").innerHTML=hours;
+
+    var minutes =d.getMinutes();
+    document.getElementById("dt4").innerHTML=minutes;
+
+    var date = d.getDate();
+    document.getElementById("dt5").innerHTML=date;
+
+    var month =d.getMonth();
+    var newmonth  = month+1;
+    document.getElementById("dt6").innerHTML=month;
+
+    console.log(date + "-"+ newmonth + "-"+year);
+
+
+
+
+
+
+    docume
+</script>    
+</body>
+</html>

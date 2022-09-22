@@ -1,0 +1,30 @@
+
+body{
+    overflow: hidden;
+}
+.contact{
+    height: 100vh;
+    background-image: url(./img/cute.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+ }
+.containerc{
+    height: 70vh;
+    background-color: rgb(255, 255, 255,.7);
+    box-shadow: 1px 2px 10px rgb(235, 202, 124);
+    /* margin-top: 80px; */
+}
+.h1{
+    text-align: center;
+}
+
+/* .btnc{
+    text-align: center;
+    color: black;
+    font-weight: bold;  
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    font-family: cursive;
+} */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="print"></p>
+    <script>
+        var a = ["abc", "def"];
+        // document.getElementById("print").innerHTML = a
+
+        var str = '';
+        for (var i = 0; i < a.length; i++) {
+            // console.log(a[i])
+            str += a[i]+"<br>"
+            // document.getElementById("print").innerHTML=a[i]
+        }
+        // document.getElementById("print").innerHTML=str
+
+        document.getElementById("print").innerHTML = a
+
+        var obj = [{Name:"djnvjd",RollNo:1},
+                    {Name:"jdfbdb",RollNo:2}]
+
+        for(var i=0;i<obj.length;i++){
+            console.log(obj[i].Name +" "+ obj[i].RollNo)
+        }
+
+    </script>
+
+    <!--  
+        .....
+        0 => "abc"
+        1 => "def";
+
+
+    -->
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Array</title>
+</head>
+<body>
+    <p id="dt1"></p>
+    <p id="dt2"></p> 
+    <p id="dt3"></p>
+    <p id="dt4"></p>
+    <p id="dt5"></p>
+    <p id="dt6"></p>
+    <p id="dt7"></p>
+    <p id="dt8"></p>
+    <p id="dt9"></p>
+    <p id="dt10"></p>
+    <p id="dt11"></p>
+    <p id="dt12"></p>
+    <p id="dt13"></p>
+    <p id="dt14"></p>
+    <p id="dt15"></p>
+    <p id="dt16"></p>
+
+
+
+
+
+    <script>
+        var ar =["hello" , "hii", "by" ];
+        document.getElementById("dt1").innerHTML=ar;
+
+        // for addition at last 
+
+        ar.push("see you");
+        document.getElementById("dt2").innerHTML=ar;
+
+
+        // remove from last 
+
+        ar.pop();
+        document.getElementById("dt3").innerHTML=ar;
+
+
+        // add at first position 
+
+
+        ar.unshift("heyy");
+        document.getElementById("dt4").innerHTML=ar;
+
+        // remove from first
+
+        ar.shift();
+        document.getElementById("dt5").innerHTML=ar;
+
+        // remove from a particular place 
+        // 0 means remove from index 0
+        // and 1 means from index 0 to how many words . 
+        ar.splice(0,1);
+        document.getElementById("dt6").innerHTML=ar;
+
+        // afetr remove addtion at particular place 
+        // one means add from index no. 0 
+        // and 1 means hiow many elements are add.
+
+        ar.splice(0,1 , "Dalip", "Divakar");
+        document.getElementById("dt7").innerHTML=ar;
+
+    var abc = ["aaa", "sss", "rrr" , "ooo"];
+    document.getElementById("dt8").innerHTML=abc;
+    document.getElementById("dt9").innerHTML=abc.sort();
+    document.getElementById("dt10").innerHTML=abc.reverse();
+
+
+    var arr = [45,67,4,6,35,86,2];
+    var arr2 =[1,2,3,4,5,6];
+
+    document.getElementById("dt11").innerHTML=arr;
+    document.getElementById("dt12").innerHTML=arr.length;
+
+    var arr3 =arr.concat(arr2);
+    document.getElementById("dt13").innerHTML=arr3;
+    document.getElementById("dt14").innerHTML=arr3.sort();
+
+    var arr4 = arr2.map(myfun);
+    function myfun(x){
+
+        return x*4;
+    }
+
+    document.getElementById("dt15").innerHTML=arr4;
+
+    var arr5 =arr.filter(chk);
+
+    function chk(x){
+
+        return x<30;
+    }
+
+    document.getElementById("dt16").innerHTML=arr5;
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

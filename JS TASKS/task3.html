@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+</head>
+<style>
+    .bt {
+        height: 40px;
+        width: 100px;
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px yellow;
+        background-color: aquamarine;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    #dv{
+        background-color: blue;
+
+    }
+
+    #sm {
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+
+
+    <button onclick="sum(20,10)" class="bt">Click Here</button>
+    <button onclick="sub(20,10)" class="bt">Click Here</button>
+    <button onclick="mul(20,10)" class="bt">Click Here</button>
+    <button onclick="div(20,10)" class="bt">Click Here</button>
+    <button onclick="pers(646,900)" class="bt">Click Here</button>
+
+    <h1 id="sm"></h1>
+
+
+    <script>
+        function sum(a, b) {
+            var result = a + b;
+
+            document.getElementById("sm").innerHTML = "The Sum Of two numbers are : " + result;
+
+        }
+        function sub(a, b) {
+            var result = a - b;
+
+            document.getElementById("sm").innerHTML = "The Subtraction Of two numbers are : " + result;
+
+        }
+        function mul(a, b) {
+            var result = a * b;
+
+            document.getElementById("sm").innerHTML = "The Multiply Of two numbers are : " + result;
+
+        }
+        function div(a, b) {
+            var result = a / b;
+            document.getElementById("sm").innerHTML.id="dv";
+            document.getElementById("sm").innerHTML = "The division Of two numbers are : " + result;
+        }
+        function pers(a, b) {
+            var result = (a/b)*100;
+            document.getElementById("sm").innerHTML = "The % Of two numbers are : " + result;
+        }
+    </script>
+
+</body>
+
+</html>

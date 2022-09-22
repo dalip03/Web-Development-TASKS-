@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task 1</title>
+</head>
+<style>
+    .div1 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+
+    }
+
+    .div2 {
+        height: 150px;
+        width: 320px;
+        background-color: red;
+        position: absolute;
+        margin-top: -150px;
+        margin-left: 170px;
+    }
+
+    .div3 {
+        height: 150px;
+        width: 320px;
+        background-color: red;
+        position: absolute;
+        margin-top: 20px;
+        /* margin-left: 180px; */
+    }
+
+    .div4 {
+        height: 320px;
+        width: 150px;
+        background-color: red;
+        position: absolute;
+        margin-left: 340px;
+        margin-top: 20px;
+    }
+
+    .div5 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        position: absolute;
+        margin-top: 190px;
+    }
+
+    .div6 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        position: absolute;
+        margin-top: 190px;
+        margin-left: 170px;
+    }
+</style>
+
+<body>
+
+
+    <!-- <div id="div1"> </div>
+<div id="div2"> </div>
+<div id="div3"> </div>
+<div id="div4"> </div>
+<div id="div5"> </div>
+<div id="div6"> </div> -->
+    <!-- 
+<h1 id="ab1"> Hello World </h1>
+<button onclick="ba()" id="ab">Click</button> -->
+
+    <h1 id="result"> 2 + 3</h1>
+    <button onclick="sum(2,3)">Click</button>
+
+    <h1 id="sub"> 56 - 3 </h1>
+    <button onclick="subtract(56,3)">Click</button>
+
+    <script>
+        //    document.getElementById("div1").id="back";
+
+        // document.getElementById("div1").className="div1";
+        // document.getElementById("div2").className="div2";
+        // document.getElementById("div3").className="div3";
+        // document.getElementById("div4").className="div4";
+        // document.getElementById("div5").className="div5";
+        // document.getElementById("div6").className="div6";
+
+        // function ba(){
+        //     document.getElementById("ab1").innerHTML="Welcome Here"
+        //     document.getElementById("ab1").style.color="green"
+        //     document.getElementById("ab1").style.fontFamily="cursive"
+        //     document.getElementById("ab1").style.fontSize="50px"
+
+
+        // }
+
+
+        function sum(a, b) {
+            var sum = a + b;
+            document.getElementById("result").innerHTML =  "The sum of two variables are : "+ sum;
+
+
+        }
+        function subtract(a, b) {
+            var subtract = a - b;
+            document.getElementById("sub").innerHTML = "The diffrece between two variables are : " + subtract;
+
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>JS MODAL</title>
+</head>
+<style>
+    .container {
+        padding: 20px;
+        display: none;
+        width: 50%;
+        box-shadow: 2px 2px 10px black;
+        background-color: rgb(161, 227, 227, .3);
+        margin-left: 350px;
+    }
+
+
+
+    .btn {
+        float: right;
+    }
+
+    .btn_sbmt {
+        width: 90px;
+        height: 40px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <button id="myBtn" class="btn_sbmt" onclick="submit()">Submit</button>
+
+    <div id="myModal" class="container">
+
+        <button id="cls_btn" class="btn" onclick="close1()">X</button>
+
+        <h3>Data Submitted</h3>
+
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis, perspiciatis, minima quibusdam
+            blanditiis quaerat veritatis expedita </p>
+        <hr>
+        <h3>Footer</h3>
+    </div>
+
+
+    <!-- script  -->      
+    <script>
+
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var x = document.getElementById("cls_btn"); 
+
+        function submit() {
+
+            modal.style.display = "block";                  
+            
+
+        }
+
+        function close1() {
+
+            modal.style.display ="none";
+
+
+        }
+
+    </script>
+</body>
+
+</html>

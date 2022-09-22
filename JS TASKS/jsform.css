@@ -1,0 +1,88 @@
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url(img/pexels-roberto-nickson-2478248.jpg);
+    background-position: center;
+background-size: cover;
+height: 100vh;
+
+}
+
+.fm{
+    height: 90vh;
+    margin-top: 30px;
+background-color: rgba(199, 209, 205, 0.9); 
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+
+} 
+.fm h1{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
+
+.btn1{
+    height: 60px;
+    margin-top: 10px;
+
+    padding-left: 20px;
+}
+.btn1 .btn{
+    background-color: rgb(127, 255, 212,.9);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px  greenyellow;
+}
+.btn:hover{
+    background-color: white;
+    box-shadow: 2px 2px 10px  goldenrod;
+    
+}
+.fm1{
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.fm2{
+    margin-top: 30px;
+
+}
+.fbtn{
+    float: right;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
+.fbtn:hover{
+    color: black;
+
+}
+.checkbox{
+    display: inline;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.backg{
+    height: 100vh;
+    background-image: url(img/lap.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    background-color: rgb(127, 255, 212,.8);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.ab{
+    color: black;
+}

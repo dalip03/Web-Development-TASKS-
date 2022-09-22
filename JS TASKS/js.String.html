@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS STRING FUNCTIONS</title>
+</head>
+<body>
+       
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <p id="id5"></p>
+    <p id="id6"></p>
+    <p id="id7"></p>
+    <p id="id8"></p>
+    <p id="id9"></p>
+    <p id="id10"></p>
+    <p id="id11"></p>
+    <h1 id="id12"></h1>
+    <h1 id="id13"></h1>
+    <h1 id="id14"></h1>
+    <h1 id="id15"></h1>
+    <h1 id="id16"></h1>
+    <h1 id="id17"></h1>
+    <h1 id="id18"></h1>
+
+    </p>
+
+    <script>
+        var str = "Welcome to the Java Script World"
+        document.getElementById("id1").innerHTML=str;
+
+        document.getElementById("id2").innerHTML=str.charCodeAt(4);
+
+        document.getElementById("id3").innerHTML=str.charAt(6);
+
+        document.getElementById("id4").innerHTML=str.endsWith("console");
+        document.getElementById("id5").innerHTML=str.endsWith("World");
+        document.getElementById("id6").innerHTML=str.startsWith("console");
+        document.getElementById("id7").innerHTML=str.startsWith("Welcome");
+
+        document.getElementById("id8").innerHTML=str.includes("Java");
+        document.getElementById("id9").innerHTML=str.includes("java");
+
+        document.getElementById("id10").innerHTML=str.indexOf("Java");
+
+        document.getElementById("id11").innerHTML=str.length;
+
+        document.getElementById("id12").innerHTML=str.includes("Java");
+
+        document.getElementById("id13").innerHTML=str.replace("Java","java");
+
+        document.getElementById("id14").innerHTML=str.toUpperCase();
+        document.getElementById("id15").innerHTML=str.toLowerCase();
+
+        document.getElementById("id16").innerHTML=str.search("console");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

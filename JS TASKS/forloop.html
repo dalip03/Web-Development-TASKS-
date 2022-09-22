@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loops In js </title>
+</head>
+<body>
+
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here</p>
+<p class="c1">Click here last</p>
+<button onclick="get()"> Button </button>
+<button onclick="get1()"> Button </button>
+<button onclick="get2()"> Button </button>
+<button onclick="get3()"> Button </button>
+
+
+    
+    <script>
+
+        function get(){
+
+var a = document.getElementsByClassName("c1");
+for( var i=0; i<a.length; i++){
+     a[i].style.fontSize="10px";
+     a[i].style.fontFamily="cursive"
+     a[i].style.color="yellowgreen"
+
+}
+
+}
+
+function get1(){
+
+var a = document.getElementsByClassName("c1");
+for( var i=0; i<a.length; i++){
+     a[i].style.fontSize="21px";
+     a[i].style.fontFamily="cursive"
+     a[i].style.color="yellow"
+
+}
+
+}
+
+function get2(){
+
+var a = document.getElementsByClassName("c1");
+for( var i=0; i<a.length; i++){
+     a[i].style.fontSize="22px";
+     a[i].style.fontFamily="cursive"
+     a[i].style.color="blue"
+
+}
+
+}
+
+function get3(){
+
+var a = document.getElementsByClassName("c1");
+for( var i=0; i<a.length; i++){
+     a[i].style.fontSize="24px";
+     a[i].style.fontFamily="cursive"
+     a[i].style.color="red"
+
+}
+
+}
+
+var ar = [8,7,6,5,4,6,26];
+var fruit = ["Apple" , "Mango", "PineApple" , "CHerry" ]
+
+     for(var i=0; i<ar.length; i++){
+        console.log(ar[i]);
+     }
+
+     for(var i=0; i<a.length; i++){
+        console.log(a[i]);
+     }
+
+     for(var i=0; i<fruit.length; i++){
+        console.log(fruit[i]);
+     }
+
+        
+  
+
+
+
+    </script>
+</body>
+</html>

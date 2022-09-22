@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>To Do List in JS</title>
+</head>
+<!-- style  -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+    body {
+        background-color: antiquewhite;
+    }
+
+    .dv1 {
+        border: 1px solid black;
+        background-color: rgb(28, 243, 200);
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .dv1 h2{
+        font-family: 'DynaPuff', cursive;
+        font-weight: bold;
+    }
+
+    #inp {
+        width: 60%;
+        /* margin-left: 175px; */
+    }
+
+    #bt {
+        /* position: absolute; */
+        /* margin-top: -34px;
+        margin-left: 830px; */
+        border-left: none;
+        background-color: blanchedalmond;
+        font-weight: bold;
+    }
+
+    #myUl li {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="dv1 ">
+            <h2>To Do List</h2>
+            <input id="inp" class="form-control" type="text" placeholder="Enter Item....">
+            <button onclick="add()" id="bt" class="btn btn-default">Add Item</button>
+        </div>
+
+
+        <div class="dv2 ">
+            <ul class="list-group list-group-flush" id="myUl">
+                <li class="list-group-item list-group-item-info">Mongo</li>
+                <li class="list-group-item ">Express</li>
+                <li class="list-group-item  list-group-item-info">Angular</li>
+                <li class="list-group-item      ">React</li>
+                <li class="list-group-item  list-group-item-info">Node JS</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- script  -->
+    <script>
+
+        var name = [];
+        var status = [];
+
+        function add() {
+            var name = document.getElementById("inp").value;
+            for (var i = 0; i < name.length; i++) {
+
+                document.getElementById("myUl") = name;
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

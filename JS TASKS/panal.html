@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>TO DO LIST</title>
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+
+    #pnl {
+        margin-left: 400px;
+        padding: 0%;
+        height: 100vh;
+    }
+
+    .panel-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .dv2 {
+        height: 20vh;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+
+    <div id="pnl" class="panel panel-warning col-xs-5">
+        <div class="panel-heading">
+            <h1>My To Do List </h1>
+            <button class="btn btn-primary" data-target="#myModal" data-toggle="modal"><span
+                    class="glyphicon glyphicon-plus"></span> </button>
+        </div>
+        <div class="panel-body">
+            <h2>What To Do ?</h2>
+            <hr>
+            <ul id="myUl" class="list-group" style="margin-top:30px ;">
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- modal  -->
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <button class="close" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span></button>
+
+                        <h3>Add Item</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+                    <input id="input" type="text" class="form-control">
+                </div>
+
+                <div class="modal-footer">
+                    <button onclick="add()" data-dismiss="modal" class="btn btn-primary">ADD ITEM</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        var arr = [{ Name: "task", status: 0 }];
+        showTask();
+
+        function add() {
+            var task = document.getElementById("input").value;
+            // console.log(task);
+            document.getElementById("input").value = "";
+
+            arr.push({ Name: task, status: 0 })
+            // console.log(arr);
+            showTask();
+
+        }
+
+        function showTask() {
+
+            var str = "";
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].status == 0) {
+                    str += '<li class="list-list-group-item lists">';
+                    str += arr[i].Name + '<button id="' + arr[i].Name + '" class="btn btn-info" onclick="done(this.id) "><span class="glyphicon glyphicon-check"></span></button> '
+                    str += '</li>'
+                }
+                else {
+                    str += '<li class="list-group-item lists">';
+                    str += '<strike>' + arr[i].Name + '</strike><button class="btn btn-danger" id="' + arr[i].Name + '" onclick="del(this.id)"><span class="glyphicon glyphicon-trash"></span></button>'
+                    str += '</li>';
+                }
+
+            }
+            document.getElementById("myUl").innerHTML = str;
+        }
+        
+        function done(x) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].Name == x) {
+
+                    arr[i].Status = 1
+                    showTask();
+                }
+            }
+        }
+
+        
+        var ab;
+
+        function del(x) {
+            ab = x;
+            var v = arr.findIndex(chkindex);
+            arr.splice(v, 1)
+            showTask();
+        }
+
+        function chkindex(x) {
+            return x.Name == ab
+        }
+
+
+    </script>
+</body>
+
+</html>

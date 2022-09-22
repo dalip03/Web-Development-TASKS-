@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <link rel="icon" href="bulb1.jpg" type="image/x-icon"> -->
+    <title>ADD TO CART </title>
+    <!-- glyphicon glyphicon-shopping-cart -->
+</head>
+<!-- style  -->
+<style>
+
+#logout{
+    display: none;
+}
+#cart{
+    display: none;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand">Lucky Towel House</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="logout"><a href="" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    <li id="login"><a href="" data-toggle="modal" data-target="#mymodal"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li id="cart"><a href="" onclick="add()"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                    <li ><a href="" ><p id="h3"></p></a></li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" role="dialog" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <button class="close" data-dismiss="modal">x</button>
+                        <h2>Login Form</h2>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="enter username here" id="uname" required
+                            autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" autocomplete="off" placeholder="enter password here" id="pass" required
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <button onclick="login()" data-dismiss="modal" class="btn btn-info">Login</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <script> -->
+    <script src="AddToCart.js"></script>
+</body>
+
+</html>

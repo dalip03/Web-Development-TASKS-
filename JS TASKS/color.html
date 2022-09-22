@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<!-- style  -->
+<style>
+    body{
+        background-image: url(img/pexels-roberto-nickson-2478248.jpg);
+        background-size: cover;
+        /* color: white; */
+    }
+.dv{
+    margin-top: 50px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255, .8);
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.bt{
+    color: black;
+}
+
+.red{
+    color: red;
+}
+
+.red{
+    color: blue;
+}
+
+.red{
+    color: green;
+}
+
+.red{
+    color: yellow;
+}
+
+/* #x{
+    font-fa;
+} */
+</style>
+
+<body>
+    
+    <div class="dv col-lg-5 col-lg-offset-1">
+        <h1>Enetr Font Style's </h1> <br>
+        <input  type="text" id="clr" placeholder="Enter Color Name" onkeyup="get1(this.value)">
+        <!-- <button class="bt" onclick="get()">Click</button> -->
+        <input  type="text" id="clr" placeholder="Enter textTransform Name" onkeyup="get2(this.value)">
+        <input  type="text" id="clr" placeholder="font back color Name" onkeyup="get3(this.value)">
+        <input  type="text" id="clr" placeholder="font family Name" onkeyup="get4(this.value)">
+        <input  type="text" id="clr" placeholder="font width" onkeyup="get5(this.value)">
+
+        <h1 id="tx" class="h">hello World</h1>
+
+
+    </div">
+
+
+<!-- java script -->
+
+    <script>
+        // function get(){
+        //     var a =getElementById("clr").value
+        //     document.getElementById("tx").className="red";
+        //     document.getElementById("tx").className="blue";
+        //     document.getElementById("tx").className="green";
+        //     document.getElementById("tx").className="yellow";
+
+        // }
+
+        function get1(x){
+            // var a =getElementById("clr").value
+
+            document.getElementById("tx").style.color=x;
+            // document.getElementById("tx").style.fontFamily=x;
+        }
+
+        function get2(y){
+            // var a =getElementById("clr").value
+
+            document.getElementById("tx").style.textTransform=y;
+        }
+        function get3(z){
+            // var a =getElementById("clr").value
+
+            document.getElementById("tx").style.backgroundColor=z;
+        }
+        function get4(a){
+            // var a =getElementById("clr").value
+
+            document.getElementById("tx").style.fontFamily=a;
+        }
+
+        function get5(w){
+            document.getElementById("tx").style.fontWeight=w;
+
+        }
+
+    </script>
+</body>
+</html>

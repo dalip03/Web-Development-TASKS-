@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Js Form</title>
+</head>
+
+<!-- style  -->
+<style>
+
+body{
+    background-image: url(img/back2.jpg);
+    background-size: cover;
+}
+.dv{
+    margin-top: 35px;
+    /* background:linear-gradient(to right, rgba(106, 227, 106, 0.999) ,rgb(246, 246, 117)) ; */
+    background-color: rgba(131, 211, 237, 0.6);   
+    padding: 10px 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.dv2{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255, .8);
+    box-shadow: 2px 2px 10px black;
+    padding: 10px;
+    height: 505px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.dv2 h1{
+    font-size: 28px;
+}
+</style>
+
+<body>
+
+    
+    <div class="dv col-lg-4 col-lg-offset-1">
+        <h2 style="text-align:center;">Registraion Form</h2>
+        <form>
+        <div class="form-group">
+            <input id="fnm" type="text" class="fm form-control" placeholder="First Name*">
+        </div>
+        <div class="form-group">
+            <input id="lnm" type="text" class="fm form-control" placeholder="Last Name*">
+        </div>
+    
+        <div class="form-group">
+            <input id="eml" type="email" class="fm form-control" placeholder="Your Email*">
+        </div>
+
+        <div class="form-group">
+            <input id="date" type="date" class="fm form-control" placeholder=" Selectr DOB*">
+        </div>
+
+        <div class="form-group">
+            <input id="qlf" type="text" class="fm form-control" placeholder="Your Qualification*">
+        </div>
+        <div class="form-group">
+            <input id="jobe" type="txt" class="fm form-control" placeholder="Job experiment*">
+        </div>
+        <div class="form-group">
+            <input id="jobs" type="number" class="fm form-control" placeholder="last salary*">
+        </div>
+        <div class="form-group">
+            <input id="jobes" type="number" class="fm form-control" placeholder="Expected salary*">
+        </div>
+    
+        <button type="button" onclick="get()" class="fbtn btn btn-primary"> Register </button>
+    </form> 
+    </div>
+    
+    <div class="dv2 col-lg-4 ">
+        <h1 id="result"> </h1>
+        <!-- <h1 id="result1"> </h1>
+        <h1 id="result2"> </h1>
+        <h1 id="result3"> </h1>
+        <h1 id="result4"> </h1>
+        <h1 id="result5"> </h1>
+        <h1 id="result6"> </h1>
+        <h1 id="result7"> </h1> -->
+
+
+    </div>
+    
+
+    
+
+
+    <script>
+
+        // function get(){
+
+        //     var a =document.getElementById("fnm").value;
+        //     document.getElementById("result").innerHTML="Candidate First Name : " +a;
+        //     console.log(a);
+
+        //     var b =document.getElementById("lnm").value;
+        //     document.getElementById("result1").innerHTML="Candidate last Name : " +b;
+        //     console.log(b);
+
+        //     var c =document.getElementById("eml").value;
+        //     document.getElementById("result2").innerHTML="Candidate Email Name : " +c;
+        //     console.log(c);
+
+        //     var d =document.getElementById("date").value;
+        //     document.getElementById("result3").innerHTML="Candidate DOB  : " +d;
+        //     console.log(d);
+
+        //     var e =document.getElementById("qlf").value;
+        //     document.getElementById("result4").innerHTML="Candidate Qualification : " +e;
+        //     console.log(e);
+
+        //     var f =document.getElementById("jobe").value;
+        //     document.getElementById("result5").innerHTML="Job Experience : " +f;
+        //     console.log(f);
+
+        //     var g =document.getElementById("jobs").value;
+        //     document.getElementById("result6").innerHTML="Last Salary : " +g;
+        //     console.log(g);
+
+        //     var h =document.getElementById("jobes").value;
+        //     document.getElementById("result7").innerHTML="Expected Salary : " +h;
+        //     console.log(h);
+        // }
+
+        function get(){
+            var out = document.getElementsByClassName("fm form-control");
+            var str ="";
+            for(var i=0; i<out.length; i++){
+                if(out[i].value=""){
+                    alert("please fill the " +out[i].id);
+                    document.getElementById(out[i].id).focus();
+                    break;
+                }
+                else{
+                    alert("no");
+                }
+                str = str + out[i].value
+                str += out[i].value+"<br>";
+            }
+            document.getElementById("result").innerHTML=str; 
+        }
+    </script>
+</body>
+</html>

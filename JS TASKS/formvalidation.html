@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Form Validation</title>
+</head>
+<style>
+    body {
+        background-image: url(img/fauxl.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .dv {
+        background-color: rgb(127, 255, 212, .6);
+        padding: 20px 30px;
+        text-align: center;
+        margin-left: 400px;
+        margin-top: 100px;
+    }
+
+
+    .bt {
+        background-color: yellowgreen;
+        color: black;
+        font-weight: bold;
+    }
+
+    .bt:hover {
+        background-color: rgb(249, 239, 239);
+        font-size: 17px;
+        padding: 2px;
+    }
+</style>
+
+<body>
+
+    <div class="dv col-lg-4">
+        <form>
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <input class="form-control" id="nm" type="text" placeholder="Enter Your Name* ">
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="tl" type="tel" placeholder="Enter Your contact* ">
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="eml" type="email" placeholder="Enter Your E-Mail* ">
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="pss" type="password" placeholder="Enter Your password* ">
+            </div> <br>
+            <button class="bt form-control" onclick="get()">Submit</button>
+
+        </form>
+    </div>
+
+
+    <script>
+        function get() {
+            var ml = document.getElementById("eml").value;
+            var ps = document.getElementById("pss").value;
+            var name = document.getElementById("nm").value;
+            var tlp = document.getElementById("tl").value;
+
+
+            if (name == "") {
+                alert("Please enter your Name")
+            }
+
+            else if (tlp == "") {
+                alert("Please enter your contact")
+            }
+
+            else if (ml == "") {
+                alert("Please enter your email")
+            }
+            else if (ps == "") {
+                alert("Please enter your password")
+            }
+
+            else {
+                alert("Thank You For Submiting the Form ,  Your Data is Submitted  ")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
